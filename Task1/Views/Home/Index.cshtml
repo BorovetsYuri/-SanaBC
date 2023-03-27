@@ -1,0 +1,12 @@
+﻿@model OutPut
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="get" asp-controller="Home" asp-action="Output">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <button type="submit">Submit</button>
+</form>
